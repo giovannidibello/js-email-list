@@ -3,3 +3,23 @@
     border: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#containerLista {
+    display: flex;
+    justify-content: center;    
+}
+
+#listaEmail {
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+    margin: 10px;    
+}
