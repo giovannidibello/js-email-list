@@ -1,5 +1,12 @@
 // seleziono gli elementi della pagina
 const listaOutput = document.getElementById("listaEmail");
+const button = document.getElementById("button");
+
+// invoco la funzione
+creaEmailRandom ()
+
+// creo una funzione che genera le 10 email random
+function creaEmailRandom () {
 
 // creo un ciclo for che genera 10 email random
 for (let i=0; i < 10; i++) {
@@ -21,3 +28,11 @@ axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
 })
 
 }
+
+}
+
+// creo al click la simulazione del fetch
+button.addEventListener("click", function () {
+    listaOutput.innerHTML = "";
+    return creaEmailRandom ()
+})
