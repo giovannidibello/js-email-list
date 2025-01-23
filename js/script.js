@@ -22,8 +22,16 @@ function creaEmailRandom() {
                 emailRandom.push(risposta.data.response);
                 console.log(risposta.data.response);
 
-                // stampo in pagina le mail
-                listaOutput.innerHTML += `<li>${risposta.data.response}</li>            `
+                // creo un ciclo che verifica se l'array è pieno
+                if (emailRandom.length == 10) {
+
+                    // ciclo su tutto l'array
+                    for ( let k in emailRandom) {
+                        
+                            // stampo in pagina le mail
+                            listaOutput.innerHTML += `<li>${emailRandom[k]}</li>  `                   }
+
+                }               
              
 
             })
